@@ -1,0 +1,172 @@
+/* Reset und Grundeinstellungen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0e0e0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Schwarzer Top-Banner */
+.top-banner {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Header mit Bild */
+.header-image {
+    width: 100%;
+    max-height: 400px;
+    overflow: hidden;
+}
+
+.header-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Navigation */
+.navbar {
+    background-color: #333;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #f39c12;
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Content Boxen mit abgerundeten Ecken */
+.content-box {
+    background-color: #c0c0c0;
+    border-radius: 15px;
+    padding: 40px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content-box h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.content-box p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333;
+}
+
+/* Über Uns - Team Container */
+.team-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    text-align: center;
+    max-width: 400px;
+}
+
+.team-member img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.team-member p {
+    font-size: 16px;
+    color: #444;
+}
+
+/* E-Mail Button */
+.email-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #f39c12;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.email-button:hover {
+    background-color: #e67e22;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .team-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-box {
+        padding: 25px;
+    }
+
+    .content-box h2 {
+        font-size: 26px;
+    }
+}

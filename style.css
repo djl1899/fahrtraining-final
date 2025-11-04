@@ -148,6 +148,31 @@ footer {
 
 footer p {
     font-size: 14px;
+
+/* Füge das in dein CSS ein */
+.social-float {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Abstand zwischen den Icons */
+  z-index: 1000; /* sicherstellen, dass sie über dem Inhalt liegen */
+}
+
+.social-icon img {
+  width: 40px; /* Icon-Größe */
+  height: 40px;
+  transition: transform 0.3s;
+}
+
+.social-icon:hover img {
+  transform: scale(1.2); /* leichte Vergrößerung beim Hover */
+  cursor: pointer;
+}
+
+    
 }
 
 /* Responsive Design */

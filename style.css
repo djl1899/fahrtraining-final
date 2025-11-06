@@ -139,6 +139,22 @@ main {
 
 
 
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1 0 auto; /* Hauptinhalt wächst, nimmt Platz ein */
+}
+
 footer {
     background-color: #333;
     color: #fff;
@@ -146,6 +162,7 @@ footer {
     font-family: Arial, sans-serif;
     padding: 8px 0;
     width: 100%;
+    flex-shrink: 0;
 }
 
 footer .footer-container {
@@ -154,6 +171,7 @@ footer .footer-container {
     padding: 0 20px;
     text-align: center;
 }
+
 
 
 

@@ -137,18 +137,23 @@ main {
     background-color: #e67e22;
 }
 
-/* Footer */
+/* Damit die Seite mindestens die Höhe des Fensters hat */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Footer soll unten kleben */
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 20px;
-    margin-top: 60px;
+    width: 100%;
+    margin-top: auto; /* schiebt den Footer an das Ende */
 }
-
-footer p {
-    font-size: 14px;
-
 
     
 }

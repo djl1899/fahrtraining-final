@@ -12,20 +12,42 @@
         <p>Fahrtraining – mehr Sicherheit, mehr Spaß, mehr Fahrgefühl!</p>
     </div>
 
-    <!-- Header mit Bild und Navigation -->
-    <header>
-        <div class="header-image">
-            <img src="3H5A6165-2.jpg
-" alt="Fahrtraining Header">
-        </div>
-        <nav class="navbar">
-            <ul>
-                <li><a href="#fahrtraining">Fahrtraining</a></li>
-                <li><a href="#ueber-uns">Über Uns</a></li>
-                <li><a href="#buchen">Buchen</a></li>
-            </ul>
-        </nav>
-    </header>
+   <header>
+    <div class="header-image">
+        <img id="header-slideshow" src="3H5A6165-2.jpg" alt="Fahrtraining Header" style="width:100%; height:auto;">
+    </div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#fahrtraining">Fahrtraining</a></li>
+            <li><a href="#ueber-uns">Über Uns</a></li>
+            <li><a href="#buchen">Buchen</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<script>
+const images = [
+    "3H5A6165-2.jpg",
+    "bild2.jpg",
+    "bild3.jpg",
+    "bild4.jpg",
+    "bild5.jpg"
+];
+let currentIndex = 0;
+const headerImg = document.getElementById("header-slideshow");
+
+setInterval(() => {
+    currentIndex = (currentIndex + 1) % images.length;
+    headerImg.src = images[currentIndex];
+}, 5000);
+</script>
+
+
+
+
+
+    
 
     <!-- Main Content -->
     <main>

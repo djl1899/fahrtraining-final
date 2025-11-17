@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fahrtraining - Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
     <!-- Schwarzer Top-Banner -->
     <div class="top-banner">
@@ -7,7 +15,8 @@
     <!-- Header mit Bild und Navigation -->
     <header>
         <div class="header-image">
-            <img id="header-slideshow" src="3H5A6165-2.jpg" alt="Fahrtraining Header" style="width:100%; height:auto;">
+            <img src="3H5A6165-2.jpg
+" alt="Fahrtraining Header">
         </div>
         <nav class="navbar">
             <ul>
@@ -20,29 +29,65 @@
 
     <!-- Main Content -->
     <main>
-        <!-- Rest bleibt unverändert -->
-    </main>
+        <!-- Fahrtraining Sektion -->
+        <section id="fahrtraining" class="content-box">
+            <h2>Fahrtraining</h2>
+            <p>Bei uns geht's nicht nur ums Fahren – es geht ums Fühlen, Erleben und Vertrauen in dein Fahrzeug. Ob du sportlicher, sicherer oder einfach entspannter unterwegs sein willst – unsere Fahrtrainings holen dich genau da ab, wo du stehst. Mit praxisnahen Übungen, echten Aha-Momenten und einer Portion Spaß zeigen wir dir, wie du souverän jede Kurve meisterst. Kein trockener Theorie-Kram – bei uns zählt die Leidenschaft fürs Fahren!</p>
+        </section>
 
-    <footer>
-        <div class="footer-container">
-            &copy; 2025 Fahrtraining. Alle Rechte vorbehalten. David Laier I 68766 Hockenheim I motorsportevent@web.de
-        </div>
-    </footer>
+        <!-- Über Uns Sektion -->
+        <section id="ueber-uns" class="content-box">
+            <h2>Über Uns</h2>
+            <div class="team-container">
+                <div class="team-member">
+                    <img src="DSC00786.JPG" alt="Person 1">
+                    <p>Tommy Strohmayer ist seit über 40 Jahren DVR-zertifizierter Fahrtrainer und seit mehr als 20 Jahren als Instruktor am Hockenheimring für Marken wie Mercedes und Porsche tätig. Seine jahrzehntelange Erfahrung, gepaart mit echter Leidenschaft fürs Fahren, macht ihn zum perfekten Coach für alle, die ihr Fahrkönnen auf ein neues Level bringen wollen.</p>
+                </div>
+                <div class="team-member">
+                    <img src="DSC00812.JPG" alt="Person 2">
+                    <p>David Laier ist seit drei Jahren für das Organisieren hinter den Kulissen zuständig und kümmert sich um alles rund ums Training – von der Planung über die Kundenbetreuung bis zur perfekten Umsetzung. Mit Struktur, Engagement und seinem Gespür fürs Detail sorgt er dafür, dass jedes Fahrtraining reibungslos abläuft und ihr euch voll auf die Strecke konzentrieren könnt.</p>
+                </div>
+            </div>
+        </section>
 
-    <script>
-    const images = [
-        "3H5A6165-2.jpg",
-        "bild2.jpg",
-        "bild3.jpg",
-        "bild4.jpg",
-        "bild5.jpg"
-    ];
-    let currentIndex = 0;
-    const headerImg = document.getElementById("header-slideshow");
+        
+<!-- Buchen Sektion -->
+<section id="buchen" class="content-box">
+    <h2>Buchen</h2>
+    <h2 style="text-align: center; color: #333;">Nächste Termine für dein Fahrtraining</h2>
+    <ul style="list-style: none; padding: 0; margin-top: 20px;">
+        <li style="background: #f39c12; color: white; margin-bottom: 12px; padding: 15px 20px; border-radius: 6px; box-shadow: 0 2px 6px rgba(0,91,187,0.3);">
+            <span style="color: #000; font-weight: 700; font-size: 18px;">21. November 2025</span><br>
+            <span style="color: #000; font-weight: 700; font-size: 18px;">Start: 9:00 Uhr</span>
+        </li>
+        <li style="background: #f39c12; color: white; margin-bottom: 12px; padding: 15px 20px; border-radius: 6px; box-shadow: 0 2px 6px rgba(0,91,187,0.3);">
+            <span style="color: #000; font-weight: 700; font-size: 18px;">28. November 2025</span><br>
+            <span style="color: #000; font-weight: 700; font-size: 18px;">Start: 9:00 Uhr</span>
+        </li>
+    </ul>
+    <p style="text-align: center; color: #333; font-weight: 600;">Sichere dir jetzt deinen Platz!</p>
+    <center>
+        <a href="mailto:motorsportevent@web.de" class="email-button">E-Mail senden</a>
+    </center>
+</section>
 
-    setInterval(() => {
-        currentIndex = (currentIndex + 1) % images.length;
-        headerImg.src = images[currentIndex];
-    }, 5000);
-    </script>
+
+
+<footer>
+  <div class="footer-container">
+    &copy; 2025 Fahrtraining. Alle Rechte vorbehalten. David Laier I 68766 Hockenheim I motorsportevent@web.de
+  </div>
+</footer>
+
+
+
+
+
+
+
+    
+
+
+   
 </body>
+</html>
